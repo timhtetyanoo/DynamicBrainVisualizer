@@ -145,7 +145,7 @@ const GroupParameters = ({
   return (
     <div className="p-2 bg-white space-y-1 w-64">
       <div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 text-xs">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-3 text-xs">
           <div className="flex flex-col items-start space-x-2 ">
             <label className="text-gray-600 flex-shrink-0">
               <Tooltip text="Enter a random seed value. 0 means randomized." />{" "}
@@ -206,7 +206,7 @@ const GroupParameters = ({
               {preprocessParams.normalize ? "Yes" : "No"}
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
       <div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-0.5">

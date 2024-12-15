@@ -66,7 +66,7 @@ const GroupView = ({
     normalize: false,
     scale: false,
     threshold: 0.5,
-    seed: 42,
+    seed: 0,
   });
   const [selectedDemographics, setSelectedDemographics] = useState("group");
   const [selectedSubjects, setSelectedSubjects] = useState(subjectIDs);
