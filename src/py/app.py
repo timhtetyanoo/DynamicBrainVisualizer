@@ -17,7 +17,6 @@ def preprocess(raw_data, binarize, binarize_threshold, scale, normalize):
   if (binarize):
     binarizer = Binarizer(threshold=binarize_threshold)
     data = binarizer.fit_transform(data)
-    print(data)
   return data
 
 @app.route('/dimensionality_reduction', methods=['POST'])
@@ -31,10 +30,11 @@ def dimensionality_reduction():
 
 
   umap_params = data.get('umap_params', {})
+  print("UMAP params:", umap_params) 
   n_neighbors = int(umap_params.get('n_neighbors', 15))
   min_dist = float(umap_params.get('min_dist', 0.1))
   metric = umap_params.get('metric', 'cosine')
-
+ 
   preprocess_params = data.get('preprocess_params', {})
   print("Preprocess params:", preprocess_params)
   binarize = preprocess_params.get('binarize', False)

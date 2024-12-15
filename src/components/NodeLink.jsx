@@ -23,8 +23,8 @@ const NodeLink = ({
   setSelectedOutgoingLabels,
   selectedIncomingLabels,
   setSelectedIncomingLabels,
-  height = WINDOW_SIZE_PIXELS + 25,
-  width = WINDOW_SIZE_PIXELS + 25,
+  height = WINDOW_SIZE_PIXELS + 20,
+  width = WINDOW_SIZE_PIXELS + 20,
   getSVGString,
   svgRef,
 }) => {
